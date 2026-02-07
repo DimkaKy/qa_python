@@ -1,0 +1,21 @@
+# Тестовые данные и логи
+test_data/
+logs/
+*.log
+
+# Кэш pytest
+.pytest_cache/
+__pycache__/
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
