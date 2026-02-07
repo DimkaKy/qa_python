@@ -1,4 +1,4 @@
-# 1. test_add_new_book_different_names ---> Тест добавления книг с разными названиями.
+# 1. test_add_new_book_different_names ---> Добавление книг с разными названиями.
 # 2. test_add_new_book_duplicate_not_added ---> Дубликат книги не добавляется.
 # 3. test_add_new_book_initial_genre_empty ---> Добавление книги с пустым жанром.
 # 4. test_set_book_genre_valid ---> Установка жанра.
@@ -10,5 +10,5 @@
 # 10. test_add_book_in_favorites_valid ---> Проверка добавления книги в избранное.
 # 11. test_add_book_in_favorites_duplicate_not_added ---> Проверяем, что дубликат не добавляется в избранное. 
 # 12. test_delete_book_from_favorites_existing ---> Проверка удаления книги из избранного.
-# 13. test_get_list_of_favorites_books_different_counts ---> Получение списка люимых книг с разным количеством книг в нем.
+# 13. test_get_list_of_favorites_books_different_counts ---> Получение списка любимых книг с разным количеством книг в нем.
 
