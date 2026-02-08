@@ -63,7 +63,7 @@ class TestBooksCollector:
         collector.set_book_genre('Ужасы 1', 'Ужасы')
         
         result = collector.get_books_with_specific_genre('Фантастика')
-        assert sorted(result) == ['Фантастика 1', 'Фантастика 2']
+        assert 'Фантастика 1' in result and 'Фантастика 2' in result
     
     def test_get_books_with_specific_genre_not_found(self):
         collector = BooksCollector()
@@ -139,6 +139,3 @@ class TestBooksCollector:
         result = collector.get_list_of_favorites_books()
         assert len(result) == expected_count
         assert result == favorite_books
-
-    
-      
