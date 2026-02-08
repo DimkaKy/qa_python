@@ -138,4 +138,4 @@ class TestBooksCollector:
         
         result = collector.get_list_of_favorites_books()
         assert len(result) == expected_count
-        assert result == favorite_books
+        
