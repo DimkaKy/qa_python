@@ -88,6 +88,18 @@ class TestBooksCollector:
         collector.set_book_genre('Книга', genre)        
         result = collector.get_books_for_children()
         assert ('Книга' in result) == is_for_children
+
+    def test_get_books_genre_returns_correct_dictionary():
+        collector = BooksCollector()
+        collector.add_new_book("Война и мир")
+        collector.add_new_book("Преступление и наказание")
+        collector.set_book_genre("Война и мир", "Фантастика")
+        result = collector.get_books_genre()
+        expected_result = {
+        "Война и мир": "Фантастика",
+        "Преступление и наказание": ""
+        }
+        assert result == expected_result
     
 
     def test_add_book_in_favorites_valid(self):
@@ -127,3 +139,6 @@ class TestBooksCollector:
         result = collector.get_list_of_favorites_books()
         assert len(result) == expected_count
         assert result == favorite_books
+
+    
+      

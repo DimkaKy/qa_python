@@ -11,4 +11,4 @@
 # 11. test_add_book_in_favorites_duplicate_not_added ---> Проверяем, что дубликат не добавляется в избранное. 
 # 12. test_delete_book_from_favorites_existing ---> Проверка удаления книги из избранного.
 # 13. test_get_list_of_favorites_books_different_counts ---> Получение списка любимых книг с разным количеством книг в нем.
-
+# 14. test_get_books_genre_returns_correct_dictionary ---> Проверяем возвращает ли метод корректный словарь.
